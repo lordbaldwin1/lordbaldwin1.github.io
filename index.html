@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- ANIMATION -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Zachary Springer | Project Website</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Zachary Springer</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <img
+          src="assets/images/ratstatue.png"
+          alt="title-image"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Hello! My name is Zachary Springer. I'm a full time student at Portland
+            State University studying Computer Science. I've worked with various programming
+            languages including C++, C, TypeScript, Java, Python, SQL, and now Javascript working
+            under multiple different programming paradigms.
+          </p>
+        </div>
+  </section>
+
+
+    <!-- SKILLS AND PREVIOUS COURSES -->
+    <section class="skills" id="skills">
+        <h2>Skills and Courses Taken:</h2>
+        <h1>
+          C++
+        </h1>
+        <h1>
+          C
+        </h1>
+        <h1>
+          Java
+        </h1>
+        <h1>
+          SQL
+        </h1>
+        <h1>
+          TypeScript
+        </h1>
+        <h1>
+          Javascript
+        </h1>
+
+        <p>
+            CS Courses: CS 161 Introduction to Programming and Problem-solving, 
+            CS 162 Intro to Computer Science, 
+            CS 163 Data Structures, 
+            CS 201 Computer Systems Prog,
+            CS 202,  
+            CS 250 Discrete Structures I, 
+            CS 251 Discrete Structures II, 
+            CS 305 Soc/Eth/Leg Impl Computing, 
+            CS 314 Elements of Software Eng, 
+            CS 350 Algorithms and Complexity, 
+            CS 358 Principles of Prog Lang, 
+            CS 486 Intro to Database Systems, 
+            ECE 341 Computer Hardware.
+        </p>
+      </section>
+    
+    
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Projects from Previous Courses</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <h3 class="project-title">TimeFlo+</h3>
+            <p class="project-details">
+              This was a very simple timer to assist in work productivity
+              by allowing for breaks yet getting the user into a flow State
+              while working.
+            </p>
+            <a href="https://github.com/lordbaldwin1/TimeFlo" target="https://github.com/lordbaldwin1/TimeFlo" class="project-link">Github link</a>
+          </div>
+          <div class="project-container project-card">
+            <h3 class="project-title">Binary Search Tree of Monsters</h3>
+            <p class="project-details">
+              The purpose of this simple program was to manage monsters as well as their
+              defense and attack skills. This is done using a BST to manage the different
+              monsters and then an array of doubly-linked lists for the monsters attacks
+              and defenses. Dynamic binding is used as well as operator overloading.
+            </p>
+            <a href="https://github.com/lordbaldwin1/CS202-Program-3" target="https://github.com/lordbaldwin1/CS202-Program-3" class="project-link">Github link</a>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- CONTACT ME -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="copy">
+          Made by Zachary Springer
+        </p>
+  </footer>
+    <!-- WEBSITE -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
