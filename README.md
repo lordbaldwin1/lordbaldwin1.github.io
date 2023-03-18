@@ -6,7 +6,7 @@ download the files and run them yourself by opening index.html.
 
 For this website I used https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ as an outline.
 
-https://developers.google.com/fonts/docs/getting_started was used to stup fonts.
+https://developers.google.com/fonts/docs/getting_started was used to setup fonts.
 
 https://www.w3docs.com/snippets/javascript/how-to-scroll-to-the-top-of-the-page-using-javascript.html#:~:text=To%20make%20the%20page%20jump,of%20coordinates%20in%20the%20document. was used to fix
 my scroll to top of page button.
