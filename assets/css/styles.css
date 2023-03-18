@@ -7,7 +7,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc33;
-  --primary-color: #1ac5a9;
+  --primary-color: #285a0b;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -71,24 +71,48 @@ nav a:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
-  
+
 nav ul {
     display: flex;
     gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+  
+nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
 }
   
 nav ul li {
-    font-weight: var(--bold-font);
+    margin: 8px;
 }
 
 .burger-menu {
     color: var(--primary-color);
     font-size: 2rem;
     border: 0;
-    background-color: transparent;
+    background-color: initial;
     cursor: pointer;
     display: none;
-}
+  }
+
+.burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
 
 .hero {
     display: flex;
@@ -248,4 +272,16 @@ nav ul li {
     padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
+  }
+
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
   }
