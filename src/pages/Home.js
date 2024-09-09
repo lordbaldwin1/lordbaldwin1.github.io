@@ -14,6 +14,9 @@ const Home = () => {
       transition={{ duration: 1 }}
     >
       <h1>Welcome.</h1>
+      <Link to="/projects" className="animated-text">
+              » View My Projects
+      </Link>
       <p>
         My name is Zachary Springer, I'm a recent graduate with a Bachelor of Science in Computer Science from Portland State University. From a young age, I've been interested in computers, exploring everything from programming and modding video games to administrating servers.<br /> <br />
 
@@ -22,9 +25,6 @@ const Home = () => {
         Thank you for visiting, and feel free to explore my projects!
       </p>
       {/* Animated text link */}
-      <Link to="/projects" className="animated-text">
-        View My Projects
-      </Link>
     </motion.section>
   );
 };
