@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+/* Styling for the Home section */
+.home-section {
+  font-family: Gloock, serif;
+  margin-left: 8%;
+  margin-top: 7%;
+  height: 100vh;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.home-section h1 {
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.home-section p {
+    margin-right: 50%;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    padding: 15px;
+    border-left: 1px solid #f7f7f7;
+}
+
+/* Custom animated text link */
+.animated-text {
+  color: #F2F2F2;
+  font-style: bold;
+  font-size: 1.75rem;
+  margin-left: 0.8%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.animated-text:hover {
+  color: #0056b3;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Styles for Bootstrap Navbar */
+.navbar-custom {
+  background-color: #0D0D0D;
+  color: #F2F2F2;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+/* Navbar brand styling */
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 150;
+  margin-right: 20px;
+}
+
+/* Navbar link styling */
+.navbar-custom .nav-link {
+  color: #F2F2F2;
+  margin-right: 20px;
+}
+
+/* Navbar link hover effect */
+.navbar-custom .nav-link:hover {
+  font-style: italic;
+}
+
+/* Toggler styling */
+.navbar-custom .navbar-toggler {
+  border-color: #ffffff;
+  color: #F2F2F2;
+  background-color: transparent;
+}
+
+/* Toggler icon styling */
+.navbar-custom .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27rgba%28255,%20255,%20255,%200.55%29%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+  width: 30px;
+  height: 30px;
+  color: #F2F2F2;
+  background-size: 30px 30px;
+}
