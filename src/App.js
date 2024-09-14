@@ -5,11 +5,14 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import CustomCursor from './components/CustomCursor.js'
+import Weather from './components/Weather.js'
 
 function App() {
   return (
     <Router>
       <div className="app-container">
+        <CustomCursor />
         <Navigation />
         <div className="content-container">
           <Routes>

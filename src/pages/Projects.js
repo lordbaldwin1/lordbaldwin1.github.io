@@ -11,7 +11,7 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h1>Projects.</h1>
+      <h1>Projects</h1>
       <a
         href="https://github.com/lordbaldwin1/Data-Visualization"
         className="animated-text"
@@ -31,7 +31,7 @@ const Projects = () => {
         » Tools used: Python (pandas), GCP (Linux VM, Buckets, PubSub), Postgres SQL, HERE Maps API, Trimet Bus Stop Data
       </p>
       <a
-        href="https://github.com/lordbaldwin1/Capstone-Screenshots"
+        href="https://github.com/lordbaldwin1/React-Maps-Module"
         className="animated-text"
         target="_blank"
         rel="noopener noreferrer"

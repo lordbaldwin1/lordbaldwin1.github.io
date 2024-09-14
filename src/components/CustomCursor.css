@@ -1,0 +1,13 @@
+/* CustomCursor.css */
+#custom-cursor {
+  position: fixed; /* Fixed positioning to follow the mouse */
+  width: 20px; /* Set the width of the circle */
+  height: 20px; /* Set the height of the circle */
+  border: 2px solid #999; /* Grey border for the circle */
+  background-color: transparent; /* Transparent background inside the border */
+  border-radius: 50%; /* Make the cursor circular */
+  pointer-events: none; /* Allow mouse events to pass through the cursor */
+  transform: translate(-50%, -50%); /* Center the cursor around the mouse pointer */
+  transition: transform 0.1s ease-out; /* Smooth transition for the cursor movement */
+  z-index: 10000; /* Ensure the cursor is on top of all elements */
+}

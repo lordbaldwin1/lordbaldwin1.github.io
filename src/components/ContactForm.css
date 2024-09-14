@@ -1,0 +1,82 @@
+/* ContactForm.css */
+
+/* Container styling for the form */
+form {
+  max-width: 500px; /* Limit the form width */
+  padding: 20px;
+  background-color: transparent; /* Light background color for the form */
+  border-radius: 8px; /* Rounded corners */
+  font-family: Gloock, sans-serif; /* Basic font family for text */
+}
+
+/* General styling for each form field */
+form div {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Label styling */
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Space between labels and input fields */
+  font-weight: bold;
+  color: #F2F2F2; /* Dark color for text */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full-width input fields */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border color */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: none;
+  color: #333; /* Dark text color */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input and textarea focus styling */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none; /* Remove default outline */
+}
+
+/* Textarea styling */
+textarea {
+  height: 100px; /* Set a default height for textarea */
+  resize: vertical; /* Allow vertical resizing only */
+  cursor: none;
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%; /* Full-width button */
+  padding: 10px;
+  background-color: #F2F2F2; /* Primary button color */
+  color: black; /* White text color */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  cursor: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  form {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem; /* Slightly smaller button text on smaller screens */
+  }
+}
