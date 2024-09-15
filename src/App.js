@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import CustomCursor from './components/CustomCursor.js'
-import Weather from './components/Weather.js'
+import Footer from './components/Footer.js'
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
