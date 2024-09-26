@@ -1,27 +1,48 @@
 /* Styling for the Home section */
 .home-section {
-  font-family: Gloock, serif;
-  margin-left: 8%;
+  font-family: 'Handjet', sans-serif;
   margin-top: 7%;
+  margin-left: 20%;
   align-items: left;
   justify-content: left;
   text-align: left;
 }
 
 .home-section h1 {
-    font-weight: 400;
-    font-size: 6rem;
-    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+.home-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
 }
 
 .home-section p {
     margin-right: 50%;
     margin-top: 13px;
     font-size: 1.1rem;
-    font-family: sans-serif;
+    font-family: 'Handjet', sans-serif;
     line-height: 1.5rem;
     padding: 15px;
     border-left: 1px solid #f7f7f7;
+}
+
+.home-paragraph p {
+    font-family: 'Handjet', sans-serif;
+    border-left: 0px;
+    margin-left: 3px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    opacity: 0.75;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 0px;
+}
+
+.home-link-custom {
+    font-size: 1.5rem;
+    left: -9px;
 }
 
 /* Custom animated text link */
@@ -39,32 +60,38 @@
 
 .typed-text {
   color: #F2F2F2;
-  font-style: bold;
-  font-size: 2.25rem;
-  margin-left: 0.8%;
-  margin-top: 5px;
+  font-size: 5rem;
+  font-weight: 600;
+  opacity: 0.7;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.typed-wrapper {
+  margin-top: -30px;
+  margin-bottom: -50px;
 }
 
 /* Hover effect */
 .animated-text:hover {
-  color: #0056b3;
+  color: #781f1f;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Custom Styles for Bootstrap Navbar */
 .navbar-custom {
-  background-color: #0D0D0D;
+  background-color: transparent;
+  font-family: 'Handjet', sans-serif;
   color: #F2F2F2;
   cursor: none;
-  border-bottom: 1px solid #f7f7f7;
+  padding-left: 0px;
+  padding-right: 15px;
 }
 
 /* Navbar brand styling */
 .navbar-custom .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 150;
+  font-size: 2rem;
+  font-weight: 350;
   cursor: none;
   margin-right: 20px;
 }
@@ -72,12 +99,14 @@
 /* Navbar link styling */
 .navbar-custom .nav-link {
   color: #F2F2F2;
+  font-size: 1.5rem;
   cursor: none;
   margin-right: 20px;
 }
 
 /* Navbar link hover effect */
 .navbar-custom .nav-link:hover {
+  color: #781f1f;
   font-style: italic;
 }
 
@@ -98,10 +127,9 @@
 }
 
 .weather-container {
-  position: absolute; /* Positions the element relative to the nearest positioned ancestor */
-  font-family: Gloock, serif;
-  top: 75px; /* Adjust top spacing as needed */
-  right: 11px; /* Position the weather component 20px from the right */
+  position: fixed; /* Positions the element relative to the nearest positioned ancestor */
+  font-family: 'Handjet', sans-serif;
+  right: 24px; /* Position the weather component 20px from the right */
   text-align: center; /* Align text to the right within the Weather component */
   max-width: 300px; /* Optional: Set a maximum width to control layout */
   border: 1px solid;
@@ -125,8 +153,17 @@
 .weather-container p {
     margin-bottom: -5px;
     font-size: 1.1rem;
-    font-family: sans-serif;
     line-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .weather-container {
+    position: relative; /* Change to relative positioning on mobile */
+    right: auto; /* Remove fixed right positioning */
+    margin: 20px auto; /* Center the container horizontally */
+    max-width: 90%; /* Ensure it doesn't take up too much space */
+    text-align: center; /* Keep text centered */
+  }
 }
 
 /* Footer styling */
@@ -174,3 +211,4 @@
   flex: 1; /* Allows this container to grow and fill the available space */
   padding: 20px; /* Optional: Add padding around content */
 }
+

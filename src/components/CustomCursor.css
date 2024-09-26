@@ -1,13 +1,28 @@
-/* CustomCursor.css */
+/* Default cursor styling */
 #custom-cursor {
-  position: fixed; /* Fixed positioning to follow the mouse */
-  width: 20px; /* Set the width of the circle */
-  height: 20px; /* Set the height of the circle */
-  border: 2px solid #999; /* Grey border for the circle */
-  background-color: transparent; /* Transparent background inside the border */
-  border-radius: 50%; /* Make the cursor circular */
-  pointer-events: none; /* Allow mouse events to pass through the cursor */
-  transform: translate(-50%, -50%); /* Center the cursor around the mouse pointer */
-  transition: transform 0.1s ease-out; /* Smooth transition for the cursor movement */
-  z-index: 10000; /* Ensure the cursor is on top of all elements */
+  width: 64px; /* Ensure the width is fixed */
+  height: 64px; /* Ensure the height is fixed */
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  opacity: 1; /* Fully visible by default */
+  background-size: contain; /* Ensure the background image fits properly */
+  transition: opacity 0.1s ease; /* Smooth fade transition */
+  z-index: 10000;
+}
+
+/* Gauntlet cursor (default) */
+#custom-cursor.gauntlet-cursor {
+  background: url('../assets/gauntlet-large.png') no-repeat center center;
+  background-size: contain; /* Maintain size for gauntlet image */
+}
+
+/* Sword cursor (on hover) */
+#custom-cursor.sword-cursor {
+  background: url('../assets/pixel-sword-large.png') no-repeat center center;
+  background-size: contain; /* Maintain size for sword image */
+}
+
+#custom-cursor.rotated {
+  transform: translate(-55%, -50%) rotate(-15deg); /* Rotate by 15 degrees */
 }

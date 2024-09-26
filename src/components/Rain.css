@@ -7,8 +7,10 @@ html, body {
 }
 
 body {
-  background: linear-gradient(to bottom, #1b1b1b, #003153);
+  background: linear-gradient(to bottom, #0c0f29, #456332);
+  background-size: 100% 200%; /* Makes the gradient longer vertically */
   background-attachment: fixed;
+  /* background-image: url('../assets/quality-dark-stone.jpeg'); */
 }
 
 .rain {

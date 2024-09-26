@@ -41,41 +41,41 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="from_name">Name</label>
-        <input
-          type="text"
-          id="from_name"
-          name="from_name"
-          value={formData.from_name}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="from_email">Email</label>
-        <input
-          type="email"
-          id="from_email"
-          name="from_email"
-          value={formData.from_email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-      </div>
-      <button type="submit">Send</button>
-    </form>
+<form onSubmit={handleSubmit}>
+  <div>
+    <input
+      type="text"
+      id="from_name"
+      name="from_name"
+      value={formData.from_name}
+      onChange={handleChange}
+      placeholder="Name"  /* Label inside the textbox */
+      required
+    />
+  </div>
+  <div>
+    <input
+      type="email"
+      id="from_email"
+      name="from_email"
+      value={formData.from_email}
+      onChange={handleChange}
+      placeholder="Email"  /* Label inside the textbox */
+      required
+    />
+  </div>
+  <div>
+    <textarea
+      id="message"
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      placeholder="Message"  /* Label inside the textarea */
+      required
+    ></textarea>
+  </div>
+  <button type="submit">Send</button>
+</form>
   );
 };
 

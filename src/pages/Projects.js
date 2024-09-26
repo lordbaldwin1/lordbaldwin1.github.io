@@ -14,7 +14,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <a
         href="https://github.com/lordbaldwin1/Data-Visualization"
-        className="animated-text"
+        className="animated-text hover-effect"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -32,7 +32,7 @@ const Projects = () => {
       </p>
       <a
         href="https://github.com/lordbaldwin1/React-Maps-Module"
-        className="animated-text"
+        className="animated-text hover-effect"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -48,7 +48,7 @@ const Projects = () => {
       </p>
       <a
         href="https://github.com/lordbaldwin1/Analog-Synthesizer-Simulation"
-        className="animated-text"
+        className="animated-text hover-effect"
         target="_blank"
         rel="noopener noreferrer"
       >

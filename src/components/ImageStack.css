@@ -1,0 +1,22 @@
+.image-stack {
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.image-stack a {
+  transition: transform 0.1s ease-in-out; /* Slower and more pronounced easing */
+}
+
+.image-stack a:hover {
+  cursor: none;
+  transform: scale(1.1);
+}
+
+.image2-custom {
+    position: relative;
+    transform: scale(0.90);
+    left: -18px;
+    margin-bottom: -10px;
+}
