@@ -21,8 +21,7 @@ const About = () => {
           I've learned that to be great at any activity or skill in life, you must
           dedicate yourself to your work and remain consistent. <br /> <br />
 
-          I've also had a love for computers my entire life, especially video games. Video games
-          are where I've met many of my closest friends and also learned some important skills.
+          I've also had a love for computers my entire life, especially video games. Gaming introduced me to some of my closest friends and helped me develop valuable skills.
           Through competitive gaming, I've learned how to learn. This means that I've learned how to
           pick up new skills quickly and apply them to my current repertoire. I've also learned the importance of mindfulness
           in my work and striving to always improve. This applies directly to programming where with every piece of code written,
