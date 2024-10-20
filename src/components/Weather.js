@@ -57,7 +57,7 @@ const Weather = () => {
             src={getIconUrl(weatherData.weather[0].icon)}
             alt={weatherData.weather[0].description}
           />
-          <p>Temp: {weatherData.main.temp} °C</p>
+          <p>Temp: {(weatherData.main.temp * 9/5 + 32).toFixed(2)} °F</p>
           <p>Weather: {weatherData.weather[0].description}</p>
           <p>Humidity: {weatherData.main.humidity} %</p>
           <p>Wind Speed: {weatherData.wind.speed} m/s</p>
