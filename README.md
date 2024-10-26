@@ -1,2 +1,2 @@
 # My Portfolio Site
-Build with: JavaScript (React), minimal React Bootstrap, Framer Motion
+Built with: JavaScript (React), minimal React Bootstrap, Framer Motion
